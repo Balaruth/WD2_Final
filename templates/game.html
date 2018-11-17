@@ -1,0 +1,19 @@
+{% extends "frame.html" %}
+
+{% block title %}
+    Data Page
+{% endblock title %}
+
+{% block imports %}
+
+{% endblock imports %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='game.js') }}"> </script>
+<body onload="startGame()">
+<br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<p>Use the ACCELERATE button to stay in the air</p>
+<p>How long can you stay alive?</p>
+</body>
+{% endblock content %}

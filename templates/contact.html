@@ -1,0 +1,14 @@
+{% extends "frame.html" %}
+
+{% block title %}
+    Contact
+{% endblock title %}
+
+{% block content %}
+    <form method="post" action="/message">
+        <input type="text" name="fullname" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email Address">
+        <textarea rows="5" cols="100">Your Message</textarea>
+        <input type="submit" value="Send Message">
+    </form>
+{% endblock content %}
